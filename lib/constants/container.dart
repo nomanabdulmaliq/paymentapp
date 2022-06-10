@@ -42,3 +42,25 @@ ContainerWidget(
     ),
   );
 }
+
+ContainerWidget2(double Height, double Width, int BgColor, String IconPath,
+    String name, double fontSize, int ColorCode, String FontFamily) {
+  return Column(
+    children: [
+      Container(
+          height: Height,
+          width: Width,
+          decoration: BoxDecoration(
+              color: Color(BgColor), borderRadius: BorderRadius.circular(12)),
+          child: IconButton(onPressed: () {}, icon: Image.asset(IconPath))),
+      Text(
+        name,
+        style: TextStyle(
+          fontSize: fontSize,
+          color: Color(ColorCode),
+          fontFamily: FontFamily,
+        ),
+      ),
+    ],
+  );
+}

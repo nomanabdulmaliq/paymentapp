@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           appBarTheme: AppBarTheme(
         color: Color(Appcolorconst.bgcolor),
-        toolbarHeight: 80,
+        toolbarHeight: 60,
       )),
       debugShowCheckedModeBanner: false,
       home: WelcomeScreen(),
