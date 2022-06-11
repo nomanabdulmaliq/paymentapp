@@ -115,7 +115,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.center,
                   child: Textwidget(
                     "Balance",
-                    18,
+                    16,
                     0xffFFFFFF,
                     "Barlow-Bold",
                   ),
