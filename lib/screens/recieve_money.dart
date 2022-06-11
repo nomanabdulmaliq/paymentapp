@@ -57,12 +57,12 @@ class RecieveMoneyScreen extends StatelessWidget {
                         Textwidget(
                             "Your Pay ID", 18, 0xffFFFFFF, "Barlow-Bold"),
                         SizedBox(
-                          width: 80,
+                          width: 60,
                         ),
                         Textwidget(
                             "xyz@524899652", 18, 0xffB0BEC5, "Barlow-Bold"),
                         SizedBox(
-                          width: 20,
+                          width: 10,
                         ),
                         Icon(
                           Icons.copy,
@@ -89,7 +89,7 @@ class RecieveMoneyScreen extends StatelessWidget {
                         Textwidget("Show bank account detail", 18, 0xffFFFFFF,
                             "Barlow-Bold"),
                         SizedBox(
-                          width: 120,
+                          width: 100,
                         ),
                         Icon(
                           Icons.arrow_right,
