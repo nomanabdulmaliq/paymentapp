@@ -3,6 +3,7 @@ import 'package:paymentapp/constants/color_constant.dart';
 import 'package:paymentapp/constants/text.dart';
 import 'package:paymentapp/screens/balance.dart';
 import 'package:paymentapp/screens/home.dart';
+import 'package:paymentapp/screens/notification.dart';
 import 'package:paymentapp/screens/offers.dart';
 import 'package:paymentapp/screens/rewards.dart';
 
@@ -24,10 +25,61 @@ class _HomeScreenState extends State<HomeScreen> {
           automaticallyImplyLeading: false,
           title: ListTile(
             leading: CircleAvatar(
-              radius: 30,
+              radius: 20,
               backgroundImage: AssetImage("assets/images/profile.png"),
             ),
-            title: Text("Demo App"),
+            title: Container(
+              height: 48,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: Color(0xff343645),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  children: [
+                    Textwidget(
+                        "Search User,ID's etc", 20, 0xffB0BEC5, "Barlow-Bold"),
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Icon(
+                      Icons.search,
+                      color: Color(0xffB0BEC5),
+                      size: 35,
+                    )
+                  ],
+                ),
+              ),
+            ),
+            trailing: CircleAvatar(
+              backgroundColor: Color(0xff343645),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const NotificationScreen()),
+                  );
+                },
+                child: Stack(
+                  children: [
+                    Icon(
+                      Icons.notifications,
+                      color: Color(0xffB0BEC5),
+                      size: 35,
+                    ),
+                    Positioned(
+                      right: 0,
+                      child: CircleAvatar(
+                        radius: 6,
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ),
           bottom: TabBar(
             labelColor: Color(0xffFFFFFF),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:paymentapp/constants/color_constant.dart';
 import 'package:paymentapp/constants/text.dart';
+import 'package:paymentapp/screens/recieve_money.dart';
 
 class Balance extends StatelessWidget {
   const Balance({Key? key}) : super(key: key);
@@ -131,15 +132,24 @@ class Balance extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left: 30, right: 30, top: 10),
-                child: Container(
-                  height: 50,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: Color(0xff343645),
-                  ),
-                  child: Center(
-                    child: Textwidget(
-                        "Add/Manage Accounts", 18, 0xffFFFFFF, "Barlow-Bold"),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const RecieveMoneyScreen()),
+                    );
+                  },
+                  child: Container(
+                    height: 50,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),
+                      color: Color(0xff343645),
+                    ),
+                    child: Center(
+                      child: Textwidget(
+                          "Add/Manage Accounts", 18, 0xffFFFFFF, "Barlow-Bold"),
+                    ),
                   ),
                 ),
               ),

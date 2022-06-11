@@ -69,21 +69,21 @@ class Rewards extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Container(
-                  height: 110,
+                  height: 100,
                   width: 120,
                   decoration: BoxDecoration(
                       color: Color(0xff242042),
                       borderRadius: BorderRadius.circular(20)),
                 ),
                 Container(
-                  height: 110,
+                  height: 100,
                   width: 120,
                   decoration: BoxDecoration(
                       color: Color(0xff242042),
                       borderRadius: BorderRadius.circular(20)),
                 ),
                 Container(
-                  height: 110,
+                  height: 100,
                   width: 120,
                   decoration: BoxDecoration(
                       color: Color(0xff242042),
@@ -91,7 +91,93 @@ class Rewards extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.all(8),
+            child: Textwidget(
+                "Collect Rewards", 18, 0xffFFFFFF, "LeagueSpartan-Bold"),
+          ),
+          Column(
+            children: [
+              Container(
+                height: 120,
+                width: 400,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color(0xff242042)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: ListTile(
+                    leading: Image.asset(
+                      "assets/images/c2.png",
+                    ),
+                    title: Column(
+                      children: [
+                        Textwidget("Flat 50 On Food Delivery", 22, 0xffFFFFFF,
+                            "Nunito-Bold"),
+                        Textwidget("On orders above 99 on Swaggy, Somato", 15,
+                            0xff9A9B9B, "Nunito-Bold"),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, right: 120),
+                          child: Container(
+                              height: 40,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(155, 94, 39, 70),
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: Center(
+                                child: Textwidget("Collect Now", 20, 0xffFA4D96,
+                                    "Nunito-Bold"),
+                              )),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                height: 120,
+                width: 400,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Color(0xff422038)),
+                child: Padding(
+                  padding: const EdgeInsets.only(top: 10),
+                  child: ListTile(
+                    leading: Image.asset(
+                      "assets/images/c1.png",
+                    ),
+                    title: Column(
+                      children: [
+                        Textwidget("20% Cashback On Amason", 22, 0xffFFFFFF,
+                            "Nunito-Bold"),
+                        Textwidget("Up to Rs 150 Minimum Order 1000", 15,
+                            0xff9A9B9B, "Nunito-Bold"),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 10, right: 120),
+                          child: Container(
+                              height: 40,
+                              width: 150,
+                              decoration: BoxDecoration(
+                                color: Color.fromARGB(155, 94, 39, 70),
+                                borderRadius: BorderRadius.circular(30),
+                              ),
+                              child: Center(
+                                child: Textwidget("Collect Now", 20, 0xffFA4D96,
+                                    "Nunito-Bold"),
+                              )),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
         ],
       ),
     );
