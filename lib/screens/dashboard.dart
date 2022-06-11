@@ -49,14 +49,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: Row(
                   children: [
                     Textwidget(
-                        "Search User,ID's etc", 20, 0xffB0BEC5, "Barlow-Bold"),
+                        "Search User,ID's etc", 16, 0xffB0BEC5, "Barlow-Bold"),
                     SizedBox(
                       width: 10,
                     ),
                     Icon(
                       Icons.search,
                       color: Color(0xffB0BEC5),
-                      size: 35,
+                      size: 30,
                     )
                   ],
                 ),

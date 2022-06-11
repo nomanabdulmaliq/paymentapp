@@ -17,7 +17,7 @@ class NotificationScreen extends StatelessWidget {
             color: Color(0xff1F222A),
             borderRadius: BorderRadius.circular(20),
           ),
-          height: 550,
+          height: 600,
           child: ListView(
             children: [
               ListTile(
@@ -63,7 +63,7 @@ class NotificationScreen extends StatelessWidget {
                     children: [
                       Padding(
                         padding: EdgeInsets.only(right: 70),
-                        child: Textwidget("Reacharge Completed", 22, 0xffFFFFFF,
+                        child: Textwidget("Reacharge Completed", 18, 0xffFFFFFF,
                             "Nunito-Bold"),
                       ),
                       SizedBox(
@@ -123,7 +123,7 @@ class NotificationScreen extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(right: 130),
                         child: Textwidget(
-                            "Money Recieved", 22, 0xffFFFFFF, "Nunito-Bold"),
+                            "Money Recieved", 18, 0xffFFFFFF, "Nunito-Bold"),
                       ),
                       SizedBox(
                         height: 10,
@@ -182,7 +182,7 @@ class NotificationScreen extends StatelessWidget {
                       Padding(
                         padding: EdgeInsets.only(right: 145),
                         child: Textwidget(
-                            "Offer Unlocked", 22, 0xffFFFFFF, "Nunito-Bold"),
+                            "Offer Unlocked", 18, 0xffFFFFFF, "Nunito-Bold"),
                       ),
                       SizedBox(
                         height: 10,
