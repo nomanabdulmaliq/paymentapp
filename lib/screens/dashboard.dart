@@ -104,7 +104,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.center,
                   child: Textwidget(
                     "Home",
-                    18,
+                    16,
                     0xffFFFFFF,
                     "Barlow-Bold",
                   ),
@@ -126,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.center,
                   child: Textwidget(
                     "Offers",
-                    18,
+                    16,
                     0xffFFFFFF,
                     "Barlow-Bold",
                   ),
@@ -137,7 +137,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   alignment: Alignment.center,
                   child: Textwidget(
                     "Rewards",
-                    18,
+                    16,
                     0xffFFFFFF,
                     "Barlow-Bold",
                   ),

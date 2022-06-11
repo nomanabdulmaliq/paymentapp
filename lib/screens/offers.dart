@@ -29,7 +29,7 @@ class Offers extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 100),
+                        padding: EdgeInsets.only(right: 80),
                         child: Textwidget(
                             "Mobile Reacharge Offer\nUse Code FIRST20",
                             18,
@@ -64,7 +64,7 @@ class Offers extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 110),
+                        padding: EdgeInsets.only(right: 90),
                         child: Textwidget(
                             "DTH Recharge Offer\nUse Code FIRSDTHT20",
                             18,
@@ -99,7 +99,7 @@ class Offers extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 110),
+                        padding: EdgeInsets.only(right: 90),
                         child: Textwidget("Flipcart Shopping Offer", 18,
                             0xffFFFFFF, "Nunito-Bold"),
                       ),
@@ -131,7 +131,7 @@ class Offers extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 120),
+                        padding: EdgeInsets.only(right: 90),
                         child: Textwidget("Money Transfer Offer", 18,
                             0xffFFFFFF, "Nunito-Bold"),
                       ),
@@ -163,7 +163,7 @@ class Offers extends StatelessWidget {
                   title: Column(
                     children: [
                       Padding(
-                        padding: EdgeInsets.only(right: 140),
+                        padding: EdgeInsets.only(right: 90),
                         child: Textwidget("Rs 50 Off on Flights", 18,
                             0xffFFFFFF, "Nunito-Bold"),
                       ),
@@ -173,7 +173,7 @@ class Offers extends StatelessWidget {
                           0xff9A9B9B,
                           "Nunito-Bold"),
                       Padding(
-                        padding: EdgeInsets.only(right: 140),
+                        padding: EdgeInsets.only(right: 90),
                         child: Textwidget(
                             "Go to offer page", 18, 0xffFFFFFF, "Nunito-Bold"),
                       ),
