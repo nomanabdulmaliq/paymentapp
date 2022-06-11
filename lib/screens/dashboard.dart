@@ -5,6 +5,7 @@ import 'package:paymentapp/screens/balance.dart';
 import 'package:paymentapp/screens/home.dart';
 import 'package:paymentapp/screens/notification.dart';
 import 'package:paymentapp/screens/offers.dart';
+import 'package:paymentapp/screens/profile.dart';
 import 'package:paymentapp/screens/rewards.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -24,9 +25,18 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           automaticallyImplyLeading: false,
           title: ListTile(
-            leading: CircleAvatar(
-              radius: 20,
-              backgroundImage: AssetImage("assets/images/profile.png"),
+            leading: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const ProfileScreen()),
+                );
+              },
+              child: CircleAvatar(
+                radius: 20,
+                backgroundImage: AssetImage("assets/images/profile.png"),
+              ),
             ),
             title: Container(
               height: 48,
